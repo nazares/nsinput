@@ -1,0 +1,38 @@
+:host {
+    /* border: 2px solid #000; */
+    width: 250px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+:host * {
+    font-family: sans-serif;
+}
+
+input {
+    /* border: 2px solid #000; */
+    border:none;
+    border-radius: 5px;
+    width: 100%;
+    padding: .5rem;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: box-shadow .25s;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+input.has-error {
+    border: 2px solid #f55;
+}
+
+.error-message {
+    margin-block: 10px;
+    font-size: .8rem;
+    color: #f55;
+    white-space: nowrap;
+}
